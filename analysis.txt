@@ -1,0 +1,14 @@
+--WEB KOPIKO
+
+Header
+	1. Heading
+	heading__contact
+	heading__socials
+
+	2. Header with Search
+	header__logo
+	header__search
+	header__cart
+
+	3. Header Navbar
+	ul li*5
