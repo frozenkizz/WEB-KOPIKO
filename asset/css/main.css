@@ -359,3 +359,86 @@
     height: 500px;
     width: 100%;
 }
+
+
+/* Footer by Thuận */
+.footer-wrap{
+    width: 100%;
+    height: 370px;
+    border-bottom: 1px solid var(--border-color);
+}
+ 
+div.footer-wrap > div.container{
+    align-items: unset ;
+}
+ 
+div.container > div.together__block {
+    padding:50px 0;
+    width: 20%;
+}
+ 
+ div.container > div.together__block > h2{
+    color:var(--white-color) ;
+    font-size: 2rem;
+}
+ 
+div.container > div.together__block > ul > li{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin: 20px auto;
+}
+ 
+.footer-list-link__follow{
+    display: flex;
+}
+.footer-list-link__follow > li{
+ margin: 6px !important;
+}
+ 
+.footer-list-link__follow > li > a > img{
+        width: 35px;
+}
+
+div.container > div.together__block > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+div.container > div.together__block > ul > li >a{
+    font-size: 1.5rem;
+    color: var(--white-color);
+ 
+}
+ 
+div.container > div.together__block > ul > li > i{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin-right:15px;
+}
+ 
+div.container > div.together__block > ul > li >a > i{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin-right:15px;
+}
+div.container > div.together__block > p{
+    font-size: 1.4rem;
+    width: 100%;
+    line-height: 20px;
+}
+ 
+.footer-pay{
+    margin-top: 20px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+ 
+}
+.footer-pay_list{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+/* End Footer */

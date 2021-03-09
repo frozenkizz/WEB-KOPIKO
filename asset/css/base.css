@@ -120,3 +120,16 @@ html {
     cursor: default;
     background-color: #c3c3c3;
 }
+
+/* by thuận */
+a:hover {
+	text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+.footer {
+    background-color: #333333;
+    color: #f1f1f1;
+}
+/* end 11:04 3/09/2021 */
