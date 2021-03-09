@@ -56,13 +56,13 @@ html {
 }
 
 /* Modal */
-.modal {
+/* .modal {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
+    display: none;
     animation: fadeIn linear 0.1s;
 }
 
@@ -80,7 +80,7 @@ html {
     position: relative;
     z-index: 1;
     animation: growth linear 0.1s;
-}
+} */
 
 /* Button style */
 .btn {
@@ -125,9 +125,11 @@ html {
 a:hover {
 	text-decoration: none;
 }
+
 a {
     text-decoration: none;
 }
+
 .footer {
     background-color: #333333;
     color: #f1f1f1;

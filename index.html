@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/modal.css">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-5.15.2-web/css/all.min.css">
 </head>
 <body>
@@ -19,7 +20,20 @@
             <!-- Heading -->
             <div class="heading">
                 <div class="container">
-                    <div class="heading__contact">
+                    <div class="heading__socials">
+                        <ul class="heading__socials-list">
+                            <li><a href=""><i class="heading__socials-icon fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="heading__socials-icon fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="heading__socials-icon fab fa-twitter-square"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="heading__welcome">
+                        <span class="heading__welcome-content">Chào mừng đến với KopiKo</span>
+                        <i class="heading__welcome-icon fas fa-heart"></i>
+                    </div>
+
+                    <!-- <div class="heading__contact">
                         <div class="heading__contact-content">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Thừa Thiên Huế</span>
@@ -28,16 +42,19 @@
                             <i class="fas fa-phone"></i>
                             <a href="076 922 0162">076 922 0162</a>
                         </div>
-                    </div>
-                    <div class="heading__socials">
-                        <ul class="heading__socials-list">
-                            <li><a href=""><i class="heading__socials-icon fab fa-facebook"></i></a></li>
-                            <li><a href=""><i class="heading__socials-icon fab fa-instagram"></i></a></li>
+                    </div> -->
+
+                    <div class="heading__log">
+                        <ul class="heading__log-io">
+                            <li class="heading__log-items"><a onclick="document.getElementById('login').style.display='block'" class="heading__log-link" href="#">Đăng nhập</a></li>
+                            <li class="heading__log-items"><a onclick="document.getElementById('register').style.display='block'" class="heading__log-link" href="#">Đăng ký</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- End Heading -->
+
+            <!-- Form Login/ Register -->
                 
             <!-- Header with Search -->
             <div class="header-with-search">
@@ -87,7 +104,7 @@
                 <div class="header__navbar">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-items"><a class="header__navbar-items-link" href="">TRANG CHỦ</a></li>
-                        <li class="header__navbar-items"><a class="header__navbar-items-link" href="">MỚi</a></li>
+                        <li class="header__navbar-items"><a class="header__navbar-items-link" href="">MỚI</a></li>
                         <li class="header__navbar-items">
                             <a class="header__navbar-items-link" href="">THỜI TRANG NAM</a>
                             <div class="header__navbar-detail">
@@ -290,7 +307,159 @@
             </div>
         </footer>
         <!-- End Footer -->
+
     </div>
+
+    <!-- Form Login / Register -->
+    <!-- Login -->
+    <div id="login" class="modal">
+        <div class="modal__overlay"></div>
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./asset/img/avatar.jpg" alt="Avatar" class="avatar">
+            </div>
+      
+            <div class="container-model">
+                <label for="uname"><b>Username</b></label>
+                <input class="log__input" type="text" placeholder="Enter Username" name="uname" required>
+        
+                <label for="psw"><b>Password</b></label>
+                <input class="log__input" type="password" placeholder="Enter Password" name="psw" required>
+                
+                <button class="btn-log" type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+      
+            <div class="container-model" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Modal Layout -->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body"> -->
+            <!-- Register Form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với Apps về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ </a> & 
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn-primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+            <!-- End Register Form -->
+
+            <!-- Login Form -->
+            <!-- <div id="login" class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+            <!-- End Login Form -->
+
+        <!-- </div>
+    </div> -->
+
+    <!-- Script -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('login');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+        
 
 </body>
 </html>
