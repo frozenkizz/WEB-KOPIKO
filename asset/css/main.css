@@ -341,6 +341,10 @@
     background-color: #adaaaa;
 }
 
+.header__navbar-detail-items:hover a{
+    color: var(--primary-color);
+}
+
 .header__navbar-detail-link {
     display: inline-block;
     font-size: 1.4rem;
@@ -348,9 +352,6 @@
     text-decoration: none;
     font-weight: 400;
 }
-
-
-
 
 /* Content */
 .content {
