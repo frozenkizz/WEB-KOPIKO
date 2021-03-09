@@ -332,7 +332,7 @@
     font-weight: 400;
 }
 
-..header__navbar-items-link {
+.header__navbar-items-link {
     border-bottom: 2px solid transparent;
 }
 
