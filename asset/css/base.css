@@ -135,3 +135,34 @@ a {
     color: #f1f1f1;
 }
 /* end 11:04 3/09/2021 */
+
+
+/* Column */
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-3 {
+    width: 33.33333% !important;
+}
+
+.col-2 {
+    width: 50% !important;
+}
+
+.col-full {
+    width: 100% !important;
+}
