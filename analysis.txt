@@ -17,23 +17,24 @@ Header
 
 
 Lâm
-Trang sản phẩm theo danh mục
+Trang sản phẩm theo danh mục--
 trang tìm kiếm
-trang chi tiết sản phẩm
+trang chi tiết sản phẩm --
 
 Hoàng
-trang quản lý tài khoản người dùng
 trang thanh toán
-Giỏ hàng
+
 
 Thuận
-Home
-
-Chưa phân
+Home --
+trang quản lý tài khoản người dùng --
 trang lịch sử mua hàng
 Chi tiết hoá đơn
+sale
 
 Nghĩa
-thương hiệu
-sale
-form đăng nhập đăng ký
+Giỏ hàng
+header
+...
+
+form đăng nhập đăng ký --
