@@ -40,7 +40,7 @@
         width: 20px;
         height: 20px;
         position: absolute;
-        top: 185px;
+        top: 175px;
         /* bottom: 0; */
     }
 
@@ -118,6 +118,28 @@
 
     .img-fluid {
         height: 170px;
+    }
+    .nav__bars-btn {
+        display: block;
+    }
+
+    .header__search-mobile {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 16px;
+    }
+
+    .header__search-history {
+        width: 100%;
+    }
+
+    .carousel-item-img {
+        height: 230px;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        top: 100px;
+        /* bottom: 0; */
     }
 
     /* Cart Responsive */

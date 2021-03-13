@@ -1007,3 +1007,82 @@ div.navrbar__Signup-search > div.header__search-input-wrap > input.search__text 
     font-size: 1.6rem;
 }
 /* end đăng ký */
+
+
+/* TẠO THANH NAVBAR CHO MOBILE */
+.nav__bars-btn {
+    margin: 15px 15px;
+    font-size: 3rem;
+    color: var(--white-color);
+    display: none;
+}
+/* Overlay */
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    animation: linear 0.2s;
+    z-index: 2;
+}
+/* Mobile */
+.nav__mobile {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    max-width: 100%;
+    background-color: #f1f1f1;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all linear 0.2s;
+    z-index: 16; /*để khi từ bên trái vào nó sẽ không bị thanh Liên quan đè lên */
+}
+
+.nav__mobile-list {
+    list-style: none;
+    margin-top: 50px;
+    margin-right: 16px;
+}
+
+.nav__mobile-list-item {
+
+}
+
+.nav__mobile-link {
+    display: block;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.nav__mobile-link:hover {
+    color: var(--primary-color);
+}
+/* Tạo hiệu ứng kích vào băng checked */
+.nav__input:checked ~ .nav__overlay{
+    display: block;
+}
+
+/*Thanh menu ẩn */
+.nav__input:checked ~ .nav__mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+/* Icon colose */
+.nav__mobile-close {
+    font-size: 1.8rem;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem ;
+}
+
+.header__search-mobile {
+    width: 100%;
+}
