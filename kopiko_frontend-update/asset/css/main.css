@@ -1,3 +1,4 @@
+
 /* Header*/
 .header {
     background-color: #333;
@@ -119,6 +120,19 @@
     color: var(--primary-color);
 }
 
+/* Header Responsive */
+.header__responsive {
+    display: none;
+    margin-left: 8px;
+}
+
+.header__responsive-icon {
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+/* Header Responsive */
+
 /* Header Navbar User */
 .heading__navbar-user {
     display: flex;
@@ -213,6 +227,15 @@
     align-items: center;
     justify-content: space-between;
     height: var(--header-with-search-height);
+    z-index: 20;
+    background-color: #333;
+}
+
+/* Fixed */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .header__logo {

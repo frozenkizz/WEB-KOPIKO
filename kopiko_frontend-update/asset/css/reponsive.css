@@ -1,0 +1,124 @@
+/* Tablet & Mobile */
+@media (max-width: 1366px){
+    .container-private {
+        margin: 0 30px 0 16px;
+    }
+
+    .carousel-caption {
+        top: 5%;
+    }
+
+    div.carousel-caption > h1 {
+        font-size: 4.5rem;
+    }
+
+    div.carousel-caption > h3 {
+        font-size: 2rem;
+    }
+
+    div.carousel-caption > a {
+        padding: 14px 30px;
+        font-size: 1.4rem;
+    }
+
+    .position__property-banner-layout {
+        top: 16%;
+    }
+
+    .footer-wrap {
+        display: none;
+    }
+
+    .footer-pay {
+        display: flex;
+        justify-content: center;
+        height: 120px;
+        align-items: center;
+    }
+    
+    .carousel-control-next, .carousel-control-prev {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 185px;
+        /* bottom: 0; */
+    }
+
+    .carousel-control-next {
+        right: 10px;
+    }
+
+    .carousel-control-prev {
+        left: 10px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    /* Main Responsive */
+
+    .header__navbar {
+        /* display: none; */
+    }
+    .header__search {
+        display: none;
+    }
+
+    .header__responsive {
+        display: block;
+    }
+
+    .header__navbar-wrap {
+        display: none;  
+    }
+
+    .header__cart-list {
+        width: 361px;
+    }
+
+    .header {
+        height: 110px;
+    }
+    
+    .banner__layout-pt-res {
+        flex-wrap: nowrap !important;
+    }
+    
+    .position__property-banner-layout > h4 {
+        font-size: 1.4rem;
+    }
+    
+    .header__logo-img {
+        height: 50px;
+        width: auto;
+    }
+    
+    .header-with-search {
+        height: calc(var(--header-with-search-height) - 30px);
+    }
+
+    .position__property-banner-layout > h1 {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+
+    .position__property-banner-layout > h5 {
+        font-size: 1.4rem;
+    }
+
+    .card-title-responsive {
+        display: none !important;
+    }
+
+    .banner__layout-pt-responsive {
+        flex-wrap: unset;
+    }
+
+    .img-fluid {
+        height: 170px;
+    }
+
+    /* Cart Responsive */
+}
