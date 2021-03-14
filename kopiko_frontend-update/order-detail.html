@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/modal.css">
     <link rel="stylesheet" href="./asset/css/style.css">
-    <link rel="stylesheet" href="./asset/css/cart-page.css">
+    <link rel="stylesheet" href="./asset/css/user.css">
     <link rel="stylesheet" href="./asset/css/reponsive.css">
     
 </head>
@@ -294,187 +294,160 @@
             <!--  -->
    
         </header>
-        <!-- End Header -->
-    
-        <!-- container-private -->
-        <div class="cart-content">
-            <div class="container-private cart-content-container">
-                <!-- No Cart -->
-                <div class="no-cart">
-                    <span class="no-cart__content">Chưa có sản phẩm nào trong giỏ hàng!</span>
-                    <a href="index.html" class="btn btn-return">QUAY TRỞ LẠI CỬA HÀNG</a>
-                </div>
-                <!-- End No Cart -->
-
-                <!-- Has cart -->
-                <div class="has-cart">
-                    <div class="has-cart__list-item">
-                        <table class="cart-list__table">
-                            <thead>
-                                <tr class="cart-list__table-header">
-                                    <td class="cart-list__table-header-1">SẢN PHẨM</td>
-                                    <td class="cart-list__table-header-2">GIÁ</td>
-                                    <td class="cart-list__table-header-3">SỐ LƯỢNG</td>
-                                    <td class="cart-list__table-header-4">TỔNG</td>
-                                </tr>
-                            </thead>
-                            <tbody class="cart-list__table-body">
-                                <tr class="cart-list__table-item">
-                                    <td>
-                                        <div class="table-item__header">
-                                            <a href="#" class="table-item__header-delete"><i class="far fa-times-circle"></i></a>
-                                            <img src="./asset/img/avatar.jpg" alt="" class="table-item__header-img">
-                                            <div class="table-item__header-type">Classic</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item__price">700.000đ</div>
-                                    </td>
-                                    <td>
-                                        <!-- <div class="table-item__quantity">1</div> -->
-                                        <div class="add-respon-sl table-item__quantity">
-                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number float-left fas fa-minus"  data-type="minus" data-field=""></button>                               
-                                            <input type="text" id="quantity" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
-                                            <button type="button" class="quantity-right-plus btn btn-success btn-number float-left fas fa-plus" data-type="plus" data-field=""></button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item__total">700.000đ</div>
-                                    </td>
-                                </tr>
-                                <tr class="cart-list__table-item">
-                                    <td>
-                                        <div class="table-item__header">
-                                            <a href="#" class="table-item__header-delete"><i class="far fa-times-circle"></i></a>
-                                            <img src="./asset/img/avatar.jpg" alt="" class="table-item__header-img">
-                                            <div class="table-item__header-type">Classic</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item__price">700.000đ</div>
-                                    </td>
-                                    <td>
-                                        <!-- <div class="table-item__quantity">1</div> -->
-                                        <div class="add-respon-sl table-item__quantity">
-                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number float-left fas fa-minus"  data-type="minus" data-field=""></button>                               
-                                            <input type="text" id="quantity-1" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
-                                            <button type="button" class="quantity-right-plus btn btn-success btn-number float-left fas fa-plus" data-type="plus" data-field=""></button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item__total">700.000đ</div>
-                                    </td>
-                                </tr>
-                                <tr class="cart-list__table-item">
-                                    <td>
-                                        <div class="table-item__header">
-                                            <a href="#" class="table-item__header-delete"><i class="far fa-times-circle"></i></a>
-                                            <img src="./asset/img/avatar.jpg" alt="" class="table-item__header-img">
-                                            <div class="table-item__header-type">Classic</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item__price">700.000đ</div>
-                                    </td>
-                                    <td>
-                                        <!-- <div class="table-item__quantity">1</div> -->
-                                        <div class="add-respon-sl table-item__quantity">
-                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number float-left fas fa-minus"  data-type="minus" data-field=""></button>                               
-                                            <input type="text" id="quantity-2" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
-                                            <button type="button" class="quantity-right-plus btn btn-success btn-number float-left fas fa-plus" data-type="plus" data-field=""></button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table-item__total">700.000đ</div>
-                                    </td>
-                                </tr>
-                                <tr class="cart-list__table-item">
-                                    <td><a href="index.html" class="btn btn-return btn-continue"><i class="fas fa-long-arrow-alt-left cart-list__table-item-icon"></i>TRỞ VỀ</a></td>
-                                    <td><a href="#" class="btn btn-return btn-update-cart">UPDATE</a></td>
-                                </tr>
-                            </tbody>
-                            
-                        </table>
+         <!-- page chi tiet hoa don -->
+         <div class="container-fluid bg-light border-bottom py-5 mb-5" >
+            <div class="container position-relative " style="height: 44px;" >
+                <div class="d-flex align-items-center py-4 h-100 position-absolute">
+                    <div class="nav-item nav-item-home">
+                        <a href="" class="nav-link">Trang chủ</a>
                     </div>
-                    <div class="has-cart__pay">
-                        <div class="has-cart__pay-detail">
-                            <table class="cart-list__table-pay">
-                                <thead>
-                                    <tr class="table-pay__header">
-                                        <td class="table-pay__header-total">TỔNG SỐ LƯỢNG</td>
-                                        <td class="table-pay__header-total-2"></td>
-                                    </tr>
-                                </thead>
-                                <tbody class="table-pay__body">
-                                    <tr class="table-pay__body-row">
-                                        <td>
-                                            <div class="table-pay__body-total">Tổng phụ</div>
-                                        </td>
-                                        <td>
-                                            <div class="table-pay__body-price table-item__price">700.000đ</div>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-pay__body-row">
-                                        <td>
-                                            <div class="table-pay__body-shipping">Giao hàng</div>
-                                        </td>
-                                        <td>
-                                            <ul class="table-pay__body-ship-detail">
-                                                <li class="pay__ship-detail">Giao hàng miễn phí</li>
-                                                <li class="pay__ship-detail">Ước tính cho Việt Nam</li>
-                                                <li class="pay__ship-detail">Đổi địa chỉ</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-pay__body-row">
-                                        <td>
-                                            <div class="table-pay__body-total">Tổng</div>
-                                        </td>
-                                        <td>
-                                            <div class="table-pay__body-price table-item__price">700.000đ</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="btn-offer">
-                                        </td>
-                                        <td class="btn-offer">
-                                            <a href="#" class="btn btn-return btn-update-cart btn-offer">THANH TOÁN</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                
+                    <div class="item__pagination"></div>
+                    <div class="nav-item nav-item-infomation">Đơn hàng của tôi</div>
+                </div>
+            </div>
+            <div class="container-fluid border-bottom"></div>  
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <div class="d-flex w-100">
+                            <div class="block__img-customer">
+                                <img src="./asset/img/avatar.jpg" class="img__customer" alt="" srcset="">
+                            </div>
+                            <div class="name__customer ml-3">
+                                <h4>Tài khoản của</h4>
+                                <h3>Phú Thuận</h3>
+                            </div>
+                        </div>
+                        <div class="w-100 mt-3">
+                            <ul class="d-flex flex-wrap w-100 pl-0">
+                                <li class="w-100 py-3 px-2 font__size-3"><a href="" class=""><i class="fas fa-user pr-5 font__size-4"></i>Thông tin tài khoản</a></li>
+                                <li class="w-100 py-3 px-2 font__size-3"><a href="" class=""><i class="fas fa-tasks pr-5 font__size-4"></i>Quản lý đơn hàng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <div class="w-100 mb-4">
+                                <h3 class="card-title text-dark my-4">Chi tiết đơn hàng #33333 </h3>
+                                <h5 class="font-weight-normal d-flex justify-content-end text-dark">Ngày đặt hàng: 16:55 26/11/2019</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-5">
+                                <div class="card border-0">
+                                    <div class="card-title pb-4" style="background-color: #f8f9fa;">
+                                        <h4 class="font-weight-normal">ĐỊA CHỈ NGƯỜI NHẬN</h4>
+                                    </div>
+                                    <div class="css-height-160 card-title pt-4 bg-white pl-3">
+                                        <h4>Đoàn phú Thuận</h4>
+                                        <h5 class="css-h5 font-weight-light">Địa chỉ: số nhà 10/kiệt 179 Trần Phú ,Tp Huế, Phường Phước Vĩnh, Thành phố Huế, 
+                                            Thừa Thiên Huế, Việt Nam
+                                        </h5>
+                                        <h5 class="css-h5 font-weight-light">Điện thoại: 0334660619</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <div class="card border-0">
+                                    <div class="card-title pb-4" style="background-color: #f8f9fa;">
+                                        <h4 class="font-weight-normal">HÌNH THỨC GIAO HÀNG</h4>
+                                    </div>
+                                    <div class="css-height-160 card-title pt-4 bg-white pl-3">
+                                        <h5 class="css-h5 font-weight-light">Giao vào Thứ sáu, 29/11</h5>
+                                        <h5 class="css-h5 font-weight-light">Miễn phí vận chuyển</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <div class="card border-0">
+                                    <div class="card-title pb-4" style="background-color: #f8f9fa;">
+                                        <h4 class="font-weight-normal">HÌNH THỨC THANH TOÁN</h4>
+                                    </div>
+                                    <div class="css-height-160 card-title pt-4 bg-white pl-3">
+                                        <h5 class="css-h5 font-weight-light">Thanh toán tiền mặt khi nhận hàng</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 bg-white h-auto mb-5 ">
+                            <table id="customers" class="rounded">
+                                <tr>
+                                  <th>Sản phẩm</th>
+                                  <th>Giá</th>
+                                  <th>Số lượng</th>
+                                  <th>Giảm giá</th>
+                                  <th>Tạm tính</th>
+                                </tr>
+                                <tr class="border-bottom">
+                                    <td class="w-50">
+                                        <div class="container-fluid">
+                                            <div class="row h-auto"  >
+                                                <div class="col-md-3 h-100 mt-5 mb-3">
+                                                    <img src="./asset/img/avatar.jpg" class="img-fluid" style="max-width:60px;height:40px;"  alt="">
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="card bg-transparent border-0">
+                                                        <div class="card-title">
+                                                            <h4 class="font-weight-normal">
+                                                                <a class="text-dark" href="">Ổ Cứng SSD Kingston A400 (240GB) - Hàng Chính Hãng</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="card-text">
+                                                            <h6>Cung cấp bởi <a href="">Tiki Trading</a></h6>
+                                                            <h5 class="css-h5 font-weight-light">Sku: 1403122591071</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-text-top pt-4">685.000 ₫</td>
+                                    <td class="align-text-top pt-4">1</td>
+                                    <td class="align-text-top pt-4">0 ₫</td>
+                                    <td class="align-text-top pt-4">685.000 ₫</td>
+                                </tr>
+                                <tr class="border-bottom">
+                                    <td class="w-50">
+                                        <div class="container-fluid">
+                                            <div class="row h-auto"  >
+                                                <div class="col-md-3 h-100 mt-5 mb-3">
+                                                    <img src="./asset/img/avatar.jpg" class="img-fluid" style="max-width:60px;height:40px;"  alt="">
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="card bg-transparent border-0">
+                                                        <div class="card-title">
+                                                            <h4 class="font-weight-normal">
+                                                                <a class="text-dark" href="">Ổ Cứng SSD Kingston A400 (240GB) - Hàng Chính Hãng</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="card-text">
+                                                            <h6>Cung cấp bởi <a href="">Tiki Trading</a></h6>
+                                                            <h5 class="css-h5 font-weight-light">Sku: 1403122591071</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-text-top pt-4">685.000 ₫</td>
+                                    <td class="align-text-top pt-4">1</td>
+                                    <td class="align-text-top pt-4">0 ₫</td>
+                                    <td class="align-text-top pt-4">685.000 ₫</td>
+                                </tr>
                             </table>
                         </div>
-
-                        <div class="has-cart__pay-offer">
-                            <table class="cart-list__table-pay-offer">
-                                <thead>
-                                    <tr class="table-pay__offer-header">
-                                        <td class="table-pay__offer-header">Phiếu ưu đãi</td>
-                                    </tr>
-                                </thead>
-                                <tbody class="table-pay-offer__body">
-                                    <tr class="table-pay-offer__body-input">
-                                        <td>
-                                            <input class="table-pay-offer__body-input-btn" type="text" placeholder="Mã ưu đãi">
-                                        </td>
-                                    </tr>
-                                    <tr class="table-pay-offer__body-btn">
-                                        <td>
-                                            <a href="#" class="btn btn-return btn-update-cart btn-offer">ÁP DỤNG</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                
-                            </table>
+                        <div class="w-100 bg-transparent h-auto">
+                            <a class="font__size-3 font-weight-normal mr-3" href="./donhangcuatoi.html">
+                                <i class="fas fa-long-arrow-alt-left"></i> Quay lại đơn hàng của tôi
+                            </a>
+                            <a href="" style="background-color: var(--primary-color);" 
+                            class="font__size-3 font-weight-bold ml-3 border p-3 px-5 text-white">Theo dõi đơn hàng</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End container-private -->
-
-        <!-- /* Đăng ký thông tin */ -->
+        <!-- end page chi tiet hoa don -->
+        <!--  -->
+<!-- /* Đăng ký thông tin */ -->
         <div class="container ">
             <div class="navrbar__Signup-information bord-top">
                 <h1 class="title-section">
@@ -491,6 +464,9 @@
             </div>
         </div>
 <!-- /* end đăng ký */ -->
+ 
+        <!-- End container-private -->
+    
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-wrap">
@@ -680,10 +656,6 @@
                     <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                     </label>
-                </div>
-          
-                <div class="container-modal" style="background-color:#f1f1f1">
-                    <!-- <button class="btn-log" type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button> -->
                     <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
             </form>
@@ -714,10 +686,6 @@
                     <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                     </label>
-                </div>
-          
-                <div class="container-modal" style="background-color:#f1f1f1">
-                    <!-- <button class="btn-log" type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button> -->
                     <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
             </form>
@@ -838,7 +806,7 @@
     <!--  -->
     <!-- Script -->
     <script src="./asset/plugins/jquery/jquery-3.5.1.min.js"></script>
-    <script src="./asset/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./asset/plugins/jquery/jquery-3.5.1.min.js"></script>
     <script src="./asset/js/app.js"></script>
     
     <!-- <script src="https://c...content-available-to-author-only...y.com/jquery-3.6.0.slim.min.js" ></script>
