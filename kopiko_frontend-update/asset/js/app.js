@@ -1,4 +1,4 @@
-var quantitiy=0;
+var quantity=0;
 let btnPlus = document.querySelector('.quantity-right-plus');
 btnPlus.onclick = function() {
     // Stop acting like a button
@@ -27,5 +27,46 @@ btnMinus.onclick =  function(e) {
                     if(quantity>0){
                     $('#quantity').val(quantity - 1);
                     }
-}      
+}     
+
+
+// Get the modal
+var modal = document.getElementById('login');
+var modal = document.getElementById('register');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+// fixed
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}   
+
+// fixed
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
    

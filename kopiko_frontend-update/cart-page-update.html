@@ -357,7 +357,7 @@
                                         <!-- <div class="table-item__quantity">1</div> -->
                                         <div class="add-respon-sl table-item__quantity">
                                             <button type="button" class="quantity-left-minus btn btn-danger btn-number float-left fas fa-minus"  data-type="minus" data-field=""></button>                               
-                                            <input type="text" id="quantity" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
+                                            <input type="text" id="quantity-1" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
                                             <button type="button" class="quantity-right-plus btn btn-success btn-number float-left fas fa-plus" data-type="plus" data-field=""></button>
                                         </div>
                                     </td>
@@ -380,7 +380,7 @@
                                         <!-- <div class="table-item__quantity">1</div> -->
                                         <div class="add-respon-sl table-item__quantity">
                                             <button type="button" class="quantity-left-minus btn btn-danger btn-number float-left fas fa-minus"  data-type="minus" data-field=""></button>                               
-                                            <input type="text" id="quantity" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
+                                            <input type="text" id="quantity-2" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
                                             <button type="button" class="quantity-right-plus btn btn-success btn-number float-left fas fa-plus" data-type="plus" data-field=""></button>
                                         </div>
                                     </td>
@@ -389,15 +389,85 @@
                                     </td>
                                 </tr>
                                 <tr class="cart-list__table-item">
-                                    <td><a href="index.html" class="btn btn-return btn-continue"><i class="fas fa-long-arrow-alt-left cart-list__table-item-icon"></i>Tiếp tục xem sản phẩm</a></td>
-                                    <td><a href="#" class="btn btn-return btn-update-cart">Cập nhật giỏ hàng</a></td>
+                                    <td><a href="index.html" class="btn btn-return btn-continue"><i class="fas fa-long-arrow-alt-left cart-list__table-item-icon"></i>TRỞ VỀ</a></td>
+                                    <td><a href="#" class="btn btn-return btn-update-cart">UPDATE</a></td>
                                 </tr>
                             </tbody>
                             
                         </table>
                     </div>
                     <div class="has-cart__pay">
-                        Hi
+                        <div class="has-cart__pay-detail">
+                            <table class="cart-list__table-pay">
+                                <thead>
+                                    <tr class="table-pay__header">
+                                        <td class="table-pay__header-total">TỔNG SỐ LƯỢNG</td>
+                                        <td class="table-pay__header-total-2"></td>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-pay__body">
+                                    <tr class="table-pay__body-row">
+                                        <td>
+                                            <div class="table-pay__body-total">Tổng phụ</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-pay__body-price table-item__price">700.000đ</div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-pay__body-row">
+                                        <td>
+                                            <div class="table-pay__body-shipping">Giao hàng</div>
+                                        </td>
+                                        <td>
+                                            <ul class="table-pay__body-ship-detail">
+                                                <li class="pay__ship-detail">Giao hàng miễn phí</li>
+                                                <li class="pay__ship-detail">Ước tính cho Việt Nam</li>
+                                                <li class="pay__ship-detail">Đổi địa chỉ</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-pay__body-row">
+                                        <td>
+                                            <div class="table-pay__body-total">Tổng</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-pay__body-price table-item__price">700.000đ</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="btn-offer">
+                                        </td>
+                                        <td class="btn-offer">
+                                            <a href="#" class="btn btn-return btn-update-cart btn-offer">THANH TOÁN</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+
+                        <div class="has-cart__pay-offer">
+                            <table class="cart-list__table-pay-offer">
+                                <thead>
+                                    <tr class="table-pay__offer-header">
+                                        <td class="table-pay__offer-header">Phiếu ưu đãi</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-pay-offer__body">
+                                    <tr class="table-pay-offer__body-input">
+                                        <td>
+                                            <input class="table-pay-offer__body-input-btn" type="text" placeholder="Mã ưu đãi">
+                                        </td>
+                                    </tr>
+                                    <tr class="table-pay-offer__body-btn">
+                                        <td>
+                                            <a href="#" class="btn btn-return btn-update-cart btn-offer">ÁP DỤNG</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -752,34 +822,7 @@
     <!-- Script -->
     <script src="./asset/plugins/jquery/jquery-3.5.1.min.js"></script>
     <script src="./asset/plugins/bootstrap/js/bootstrap.min.js"></script>
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById('login');
-        var modal = document.getElementById('register');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-
-        // fixed
-        window.onscroll = function() {myFunction()};
-
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-}
-    </script>
+    <script src="./asset/js/app.js"></script>
     
     <!-- <script src="https://c...content-available-to-author-only...y.com/jquery-3.6.0.slim.min.js" ></script>
     <script src="https://c...content-available-to-author-only...e.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>

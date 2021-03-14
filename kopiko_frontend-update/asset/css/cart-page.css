@@ -55,7 +55,6 @@
 .has-cart__list-item {
     width: 60%;
     height: 50%;
-    border-right: 1px solid red;
     margin-right: 16px;
     padding-right: 16px;
 }
@@ -100,7 +99,7 @@
 }
 
 .cart-list__table-header-4 {
-    width: 25%;
+    /* width: 25%; */
     float: right;
 }
 
@@ -123,8 +122,7 @@
 }
 
 .table-item__header-img {
-    width: 100px;
-    height: 100px;
+    width: 30%;
     border: 1px solid #888;
 }
 
@@ -152,7 +150,7 @@
 }
 
 .btn-update-cart {
-    width: calc(100% + 30px);
+    width: calc(100% + 32px);
 }
 
 .cart-list__table-item-icon {
@@ -163,7 +161,91 @@
 /* Cart Pay */
 .has-cart__pay {
     width: 40%;
-    background-color: #333;
+    border-left: 1px solid var(--border-color);
+    padding-left: 32px;
 }
 
+.cart-list__table-pay {
+    width: 100%;
+    padding: 0;
+}
 
+.has-cart__pay-detail {
+    width: 100%;
+}
+
+.table-pay__header {
+    border-bottom: 3px double #666;
+}
+
+.table-pay__header-total {
+    font-size: 1.6rem;
+    font-weight: 1000;
+    padding-bottom: 3px;
+    width: 60%;
+}
+
+.table-pay__header-total {
+    width: 40%;
+}
+
+.table-pay__body {
+    font-size: 1.4rem;
+}
+
+.table-pay__body-row {
+    border-bottom: 1px solid #666;
+    height: 60px;
+}
+
+.table-pay__body-total {
+
+}
+
+.table-pay__body-price {
+    width: 150px;
+}  
+
+.has-cart__pay-offer {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.cart-list__table-pay-offer {
+    width: 100%;
+}
+
+.table-pay__offer-header {
+    font-size: 1.6rem;
+    font-weight: 1000;
+    padding-bottom: 3px;
+    border-bottom: 3px double #666;
+}
+
+.table-pay-offer__body {
+    font-size: 1.4rem;
+}
+
+.table-pay-offer__body-input {
+    width: 100%;
+}
+
+.table-pay-offer__body-input-btn {
+    width: 100%;
+    margin-top: 8px;
+    height: 40px;
+}
+
+.btn-offer {
+    width: 100% !important;
+}
+
+.table-pay__body-ship-detail {
+    list-style: none;
+    padding: 0;
+}
+
+.table-pay__body-col {
+    display: flex;
+    align-items: center;
+}
