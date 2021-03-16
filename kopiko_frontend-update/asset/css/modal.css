@@ -1,7 +1,7 @@
 .log__input {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 10px 20px;
+    margin-bottom: 8px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -17,6 +17,7 @@
     cursor: pointer;
     width: 100%;
     font-size: 1.4rem;
+    margin-bottom: 16px;
 }
   
 .btn-log:hover {
@@ -33,7 +34,7 @@
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 12px 0;
     position: relative;
 }
   
@@ -43,8 +44,9 @@ img.avatar {
 }
   
 .container-modal {
-    margin: 0 12px;
+    margin: 0 12px 16px 12px;
     font-size: 1.2rem;
+    
 }
   
 span.psw {

@@ -68,7 +68,7 @@
     font-size: 1.6rem;
     font-weight: 1000;
     padding-bottom: 8px;
-    border-bottom: 3px double #666;
+    border-bottom: 3px double var(--border-color);
 }
 
 .cart-list__table-body {
@@ -137,6 +137,28 @@
 
 .table-item__quantity {
     font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-item__quantity .btn {
+    min-width: 30px;
+    height: 28px;
+}
+
+.btn-quantity {
+    background-color: #333;
+    color: var(--white-color);
+}
+
+.btn-quantity:hover {
+    background-color: var(--white-color);
+    border: 1px solid #333;
+}
+
+.form-control {
+    font-size: 1.3rem;
 }
 
 .table-item__total {
@@ -175,7 +197,7 @@
 }
 
 .table-pay__header {
-    border-bottom: 3px double #666;
+    border-bottom: 3px double var(--border-color);
 }
 
 .table-pay__header-total {
@@ -194,7 +216,7 @@
 }
 
 .table-pay__body-row {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid var(--border-color);
     height: 60px;
 }
 
@@ -219,7 +241,7 @@
     font-size: 1.6rem;
     font-weight: 1000;
     padding-bottom: 3px;
-    border-bottom: 3px double #666;
+    border-bottom: 3px double var(--border-color);
 }
 
 .table-pay-offer__body {

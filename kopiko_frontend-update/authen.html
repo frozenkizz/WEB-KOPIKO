@@ -1,0 +1,62 @@
+<!-- Form Login / Register -->
+<!-- Login -->
+<div id="login" class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__wrap">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./asset/img/avatar.jpg" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container-modal">
+                <label class="log__label" for="uname"><b>Username</b></label>
+                <input class="log__input" type="text" placeholder="Enter Username" name="uname" required>
+        
+                <label class="log__label" for="psw"><b>Mật khẩu</b></label>
+                <input class="log__input" type="password" placeholder="Enter Password" name="psw" required>
+                
+                <button class="btn-log" type="submit">ĐĂNG NHẬP</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Register -->
+<div id="register" class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__wrap">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./asset/img/avatar.jpg" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container-modal">
+                <label class="log__label" for="uname"><b>Email</b></label>
+                <input class="log__input" type="text" placeholder="Nhập Email của bạn" name="uname" required>
+
+                <label class="log__label" for="uname"><b>Số điện thoại</b></label>
+                <input class="log__input" type="text" placeholder="Nhập số điện thoại" name="uname" required>
+
+                <label class="log__label" for="uname"><b>Họ và tên</b></label>
+                <input class="log__input" type="text" placeholder="Nhập tên của bạn" name="uname" required>
+        
+                <label class="log__label" for="psw"><b>Mật khẩu của bạn</b></label>
+                <input class="log__input" type="password" placeholder="Nhập mật khẩu" name="psw" required>
+
+                <label class="log__label" for="psw"><b>Nhập lại mật khẩu</b></label>
+                <input class="log__input" type="password" placeholder="Nhập mật khẩu" name="psw" required>
+                
+                <button class="btn-log" type="submit">ĐĂNG KÍ</button>
+                <label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--  -->

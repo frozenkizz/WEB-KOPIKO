@@ -173,6 +173,10 @@
         min-width: 70px !important;
     }
 
+    .btn-quantity {
+        min-width: 20px !important;
+    }
+
     .table-item__header-delete i {
         font-size: 1.8rem;
     }
